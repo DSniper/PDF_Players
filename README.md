@@ -1,1 +1,1 @@
-Being Maven Project all Dependencies are taken Care .Just import the project proide proper input path of the file . You will get the JSON Response where you Ran the Code.
+Being Maven Project all Dependencies are taken Care of. Just import the project and provide the proper input path of the file. You will get the JSON Response where you Ran the Code.
