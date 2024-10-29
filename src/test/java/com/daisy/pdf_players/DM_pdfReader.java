@@ -136,14 +136,16 @@ package com.daisy.pdf_players;
 	    	long startTime = System.currentTimeMillis();
 	    	
 	        // Specify your PDF file path here
-	        String fileName, defaultGeneratedFilepath ,createdFile; 
+	        String fileName ;
+//	        , defaultGeneratedFilepath ,createdFile
+	         
 	        Scanner sc = new Scanner(System.in);
 //	        System.out.println("Enter Input File path");
 //	        fileName =  sc.nextLine();
 //	        System.out.println("File will be generated at " + fileName);
 	        fileName = "C:\\Users\\Dsnip\\Downloads\\FSdATA.pdf";
-	        defaultGeneratedFilepath = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
-	        createdFile = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
+//	        defaultGeneratedFilepath = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
+//	        createdFile = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
 
 	        // Call the method to read the PDF file and get JSON data
 	        JSONObject jsonData = ob.readPDFFile(fileName);
