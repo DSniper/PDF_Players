@@ -12,7 +12,6 @@ package com.daisy.pdf_players;
 	import java.io.FileWriter;
 	import java.io.IOException;
 	import java.util.Scanner;
-
 	import org.apache.pdfbox.Loader;
 	import org.apache.pdfbox.pdmodel.PDDocument;
 	import org.apache.pdfbox.text.PDFTextStripper;
@@ -122,32 +121,22 @@ package com.daisy.pdf_players;
 	            }
 	        }
 	    }
-
-	    
-	    
-	    
-	    
-	    
-	    
-	    
 	    public static void main(String[] args) {
 	    	DM_pdfReader ob = new DM_pdfReader();
-	    	
 	    	long startTime = System.currentTimeMillis();
-	    	
 	        // Specify your PDF file path here
-	        String fileName, defaultGeneratedFilepath ,createdFile; 
+	        String fileName ;
+//	        , defaultGeneratedFilepath ,createdFile
 	        Scanner sc = new Scanner(System.in);
 //	        System.out.println("Enter Input File path");
 //	        fileName =  sc.nextLine();
 //	        System.out.println("File will be generated at " + fileName);
-	        fileName = "C:\\Users\\Dsnip\\Downloads\\FSdATA.pdf";
-	        defaultGeneratedFilepath = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
-	        createdFile = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
+	        fileName = "C:\\Users\\Dsnip\\Downloads\\spacepdfData.pdf";
+//	        defaultGeneratedFilepath = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
+//	        createdFile = "D:\\Coding\\Ecllipse\\Ecllipse Projects\\pdf_players\\Generated File";
 
 	        // Call the method to read the PDF file and get JSON data
 	        JSONObject jsonData = ob.readPDFFile(fileName);
-
 	        // Print the JSON data
 	     // Save JSON data to file
 	        ob.saveJsonToFile(jsonData);
